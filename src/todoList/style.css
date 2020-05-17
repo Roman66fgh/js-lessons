@@ -1,0 +1,56 @@
+
+#styleTodo {
+    min-width: 500px;
+    min-height: 150px;
+    max-width: 500px;
+    background: #f0f0f0;
+    padding: 5px;
+    border: 2px solid #000;
+    
+}
+li[performed='true'] 
+    span {
+    text-decoration: line-through;
+}
+
+#styleTodo[boolFilter='done'] 
+    li[performed='false']{
+    display: none;
+}
+
+#styleTodo[boolFilter='inwork'] 
+    li[performed='true']{
+    display: none;
+}
+
+#styleTodo[boolFilter='all'] 
+    button[filter='all']{
+    background-color:  #33FCFF;
+}
+
+#styleTodo[boolFilter='inwork'] 
+    button[filter='inwork']{
+    background-color: #33FCFF;
+}
+
+#styleTodo[boolFilter='done'] 
+    button[filter='done']{
+    background-color:  #33FCFF;
+}
+
+#styleTodo:not([boolFilter]) 
+    button[filter='all']{
+    background-color:  #33FCFF;
+}
+
+.search {
+    margin-left: 120px;
+    
+    align-items: center;
+}
+
+li  button{
+    min-width: 120px;
+    min-height: 30px;
+    max-height: 30px;
+}
