@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+  <form id="Movie" style=" min-width: 500px; min-height: 150px;max-width: 500px;background: #f0f0f0;padding: 5px;border: 2px solid #000;">
+        <label for = "movieName">Введите название фильма: </label>
+        <input type ="text" id="movieName" placeholder="Name of film"/><br /><br />
+        <label for = "movieYear">Введите год выпуска фильма: </label>
+        <input type ="text" id="movieYear" placeholder="Year of release"/><br /><br />
+        <button type="submit">Search</button>
+        <div class="Div">
+            <div class="Lines"></div>
+        </div>
+    </form>
+
+    <div id="movies" invisible>
+    </div>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
